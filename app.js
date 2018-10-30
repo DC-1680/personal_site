@@ -31,6 +31,7 @@ app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname, '/public/index.html'))
 }) // Send index.html for any other requests
 
+
 app.post('/contact', (req, res, next) => {
 	mailer.sendMail({
 		from: req.body.from,
@@ -39,7 +40,7 @@ app.post('/contact', (req, res, next) => {
 		html: `FROM: ${req.body.name} Email: ${req.body.email} ${req.body.message}` || '[No message]',
 	}, (err) => {
 		if (err) next(err);
-		// res.sendStatus(200);
+		res.sendStatus(200);
 	})
 });
 
