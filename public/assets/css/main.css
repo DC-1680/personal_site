@@ -237,6 +237,13 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+	.hidden {
+		display: none;
+	}
+	  
+	.visible {
+		display: initial;
+	}
 
 /* Row */
 
@@ -2812,6 +2819,8 @@ input, select, textarea {
 		#main > section:first-child {
 			border-top: 0;
 		}
+
+		
 
 /* Footer */
 
