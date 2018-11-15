@@ -4,7 +4,7 @@
   "description": "My personal site",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -w & node app.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
