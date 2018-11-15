@@ -13,6 +13,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "express": "^4.16.4",
     "heroku": "^7.18.9",
+    "nodemailer": "^4.6.8",
     "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
