@@ -2,15 +2,17 @@
   "name": "darylconcha",
   "version": "1.0.0",
   "description": "My personal site",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "start-dev": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "babel-preset-stage-2": "^6.24.1",
     "express": "^4.16.4",
+    "heroku": "^7.18.9",
     "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
