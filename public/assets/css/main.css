@@ -2168,10 +2168,6 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2.25em 0;
 			width: 100%;
-			/* height: 90%; */
-			/* background-size: cover; */
-			
-			/* background-color: grey; */
 		}
 
 			.image.fit img {
@@ -2180,10 +2176,11 @@ input, select, textarea {
 				height: auto;
 				transition: .5s ease;
 				backface-visibility: hidden;
+				opacity: 1;
 				/* overflow: hidden; */
 			}
 
-			.col-4:hover .middle {
+			.middle {
 				transition: .5s ease;
   				opacity: 0;
   				position: absolute;
@@ -2194,20 +2191,12 @@ input, select, textarea {
   				text-align: center;
 			}
 
-			.col-4:hover img {
+			.image.fit:hover img {
 				opacity: 0.3
 			}
 
-			.col-4:hover .middle {
+			.image.fit:hover .middle {
 				opacity: 1
-			}
-			
-			.col-4:hover text {
-				background-color: #2A66E1;
-  				color: white;
-				  font-size: 16px;
-				  backface-visibility: hidden;
-  				/* padding: 16px 32px; */
 			}
 
 		.image.avatar {
@@ -2230,6 +2219,7 @@ input, select, textarea {
 			.image.main img {
 				border-radius: 0;
 			}
+
 
 /* List */
 
@@ -2432,6 +2422,9 @@ input, select, textarea {
 				text-align: center;
 				top: 0;
 				width: 2.5em;
+			}
+			ul.feature-icons a {
+				border-bottom: none;
 			}
 
 /* Icons */
@@ -2639,6 +2632,10 @@ input, select, textarea {
 		.button.primary {
 			background-color: #2A66E1;
 			color: #ffffff !important;
+			border-bottom: none;
+		}
+		.button.primary a {
+			border-bottom: none;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2687,12 +2684,36 @@ input, select, textarea {
 			padding-right: 2.5em;
 			vertical-align: middle;
 			width: 48%;
+			border-color: #2A66E1
 		}
 
 			.features article .image img {
 				display: block;
 				width: 100%;
+				transition: .5s ease;
+				backface-visibility: hidden;
+				opacity: 1;
 			}
+
+			.middle {
+				transition: .5s ease;
+  				opacity: 0;
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+  				-ms-transform: translate(-50%, -50%);
+  				text-align: center;
+			}
+
+			.features article span:hover img {
+				opacity: 0.3
+			}
+
+			.features article span:hover .middle {
+				opacity: 1
+			}
+
 
 		.features article .inner {
 			display: inline-block;
