@@ -2053,7 +2053,8 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			height: 91.75%;
+			object-fit: cover;
 		}
 
 		.image[data-position="top left"] img {
@@ -2168,15 +2169,17 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2.25em 0;
 			width: 100%;
+			
 		}
 
 			.image.fit img {
 				display: block;
 				width: 100%;
-				height: auto;
+				max-height: 160px;
 				transition: .5s ease;
 				backface-visibility: hidden;
 				opacity: 1;
+				object-fit: cover;
 				/* overflow: hidden; */
 			}
 
@@ -3002,7 +3005,7 @@ input, select, textarea {
 					width: 100%;
 				}
 
-			.image.main {
+			.image.main img {
 				height: 20em;
 			}
 
