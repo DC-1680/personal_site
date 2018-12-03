@@ -2950,6 +2950,9 @@ input, select, textarea {
 			#main > section > .container {
 				padding: 4em 0 2em 0;
 			}
+			.image.main img {
+				height: 20em;
+			}
 
 	}
 
@@ -2973,6 +2976,10 @@ input, select, textarea {
 
 			#wrapper {
 				padding-right: 20em;
+			}
+
+			.image.main img {
+				height: 20em;
 			}
 
 	}
@@ -3006,7 +3013,7 @@ input, select, textarea {
 				}
 
 			.image.main img {
-				height: 12em;
+				height: 20em;
 			}
 
 		/* Header */
@@ -3147,6 +3154,7 @@ input, select, textarea {
 
 	}
 
+
 /* Small */
 
 	@media screen and (max-width: 736px) {
@@ -3183,8 +3191,8 @@ input, select, textarea {
 				margin: 0 0 1em 1.5em;
 			}
 
-			.image.main {
-				height: 12em;
+			.image.main img {
+				height: 20em;
 			}
 
 		/* Section/Article */
