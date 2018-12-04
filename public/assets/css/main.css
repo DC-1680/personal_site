@@ -2215,7 +2215,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 20em;
+			height: 17em;
 			border-radius: 0;
 		}
 
@@ -2951,7 +2951,7 @@ input, select, textarea {
 				padding: 4em 0 2em 0;
 			}
 			.image.main img {
-				height: 20em;
+				height: 18em;
 			}
 
 	}
@@ -2979,7 +2979,7 @@ input, select, textarea {
 			}
 
 			.image.main img {
-				height: 20em;
+				height: 18.25em;
 			}
 
 	}
